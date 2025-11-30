@@ -11,7 +11,7 @@ This repository contains code and models for classifying images as either a bicy
 
 - Two classes: `bicycle`, `motorcycle`
 - Data directories: `Data/bicycle/`, `Data/motorcycle/`
-- The main analysis notebook is here: 
+- The main analysis notebook is here: [`image_classification_bikes_motorcycles.ipynb`](./image_classification_bikes_motorcycles.ipynb)
 - Cleaning steps used: `imghdr` (file-type validation), `cv2.imread()` for detecting corrupted files
 - Input pipeline built with `tf.data.Dataset` (cacheing, batching, shuffling, prefetching)
 
@@ -27,7 +27,7 @@ This repository contains code and models for classifying images as either a bicy
 - Data augmentation: random flips, rotations, and brightness adjustments (added it later)
 - Architecture: 3 convolutional blocks → Flatten + Dense + Dropout → Softmax output
 - Training notes: strong training accuracy but weaker validation/generalization
-- Prediction results tried on 10 random images: All predicted incorrectly
+- Custom CNN shows signs of overfitting and not very accurate at predicting
 
 ### Transfer Learning — MobileNetV2
 
